@@ -1,0 +1,30 @@
+
+@import "../sass/variables";
+.modal-container {
+    width: 80%;
+    
+    
+  .top-card__rate-heading__modal {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    h2 {
+    font-family: $font_headers;
+    
+}
+
+    
+  }
+  .gallery-img {
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100px;
+    }
+    }
+
+    .close-button__modal{
+        color: #fff;
+    }
+}
+

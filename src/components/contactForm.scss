@@ -1,0 +1,67 @@
+
+@import "../sass/variables";
+.contactform-container
+{
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-family: "Helvetica";
+    resize: none;
+  }
+
+
+  #contact-button{
+    width: 20%;
+    border: none;
+    background-color: $button_red;
+    color: $col_white;
+    font-family: $font_content;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: $col_bordergrey;
+        color: $col_darkgrey;
+    }
+    }

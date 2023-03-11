@@ -1,0 +1,68 @@
+@import "../sass/variables";
+
+.about-container {
+  width: 80%;
+  display: Grid;
+  grid-template-columns: 1;
+  grid-template-rows: 0.5fr 1fr;
+  margin: auto;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+
+  .about-heading {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    border: 1px solid $col_lightgrey;
+    background-color: $col_lightgrey;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-family: $font_headers;
+    text-align: center;
+    color: $col_headings;
+    margin-top: 5rem;
+  }
+
+  .about-content {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    padding: 3rem 0;
+    display: Grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    width: 96%;
+    margin-top: 3rem;
+
+    p {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-family: $font_content;
+      font-size: 1.2rem;
+      
+    }
+
+    img {
+      grid-column: 2/-1;
+      grid-row: 1/-1;
+      width: 100%;
+      padding-left: 3rem;
+    }
+  }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    .about-content {
+      padding: 0 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 96%;
+    }
+    img {
+      display: none;
+    }
+  }
+}

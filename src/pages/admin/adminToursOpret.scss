@@ -1,0 +1,93 @@
+@import "../../sass//variables";
+
+.admin-opret-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr auto 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .opret-tour-heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-family: $font_headers;
+  }
+
+  form {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    font-family: $font_content;
+
+    h4 {
+      margin-bottom: 0.5rem;
+      font-family: $font_content;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+      height: 2rem;
+      font-family: $font_content;
+      font-size: 0.8rem;
+      padding-left: 0.9rem;
+      font-family: $font_content;
+        margin: 0;
+    }
+    .text-area {
+      width: 100%;
+      border: 0.1rem solid $col_bordergrey;
+      border-radius: 0.3rem;
+      font-family: $font_content;
+      padding: 0.9rem;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+    }
+
+    .upload {
+      display: flex;
+      font-family: $font_content;
+    }
+    .button-submit_admin-tours-opret {
+      border: none;
+      background-color: $button_red;
+      color: $col_white;
+      font-family: $font_content;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      font-family: $font_content;
+    }
+  }
+  .besked {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    font-family: $font_content;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 56rem) {
+  .admin-opret-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 1rem;
+    width: 90%;
+    padding: 1rem;
+
+    
+  }
+}

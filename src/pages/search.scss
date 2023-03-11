@@ -1,0 +1,86 @@
+@import "../sass/variables";
+
+.search-container{
+    min-height: 93vh;
+    display:grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 8rem 3rem auto;
+
+    .search-heading{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid $col_lightgrey;
+    background-color: $col_lightgrey;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-family: $font_headers;
+    text-align: center;
+    color: $col_headings;
+    margin-bottom: 2rem;
+    }
+
+    .back-button{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 50%;
+        height: 2.5rem;
+        margin: 1rem;
+        border: none;
+        background-color: $col_red;
+        border-radius: 0.3rem;
+        color: $col_white;
+        cursor: pointer;
+        .arrow{
+            padding-top: 0.2rem;
+        }
+    }
+
+    
+    input{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 50%;
+        margin: auto;
+        height: 3rem;
+        font-family: $font_content;
+        font-size:1rem;
+        padding-left: 0.9rem;
+        
+        
+    }
+
+    .search-box{
+        grid-column: 2/3;
+        grid-row: 3/-1;
+        .search-result{
+            text-align: center;
+            margin: 2rem;
+        }
+        .search{
+            background-color: white;
+            padding: 4rem 4rem 4rem 4rem;
+            margin-bottom: 2rem;
+            h2{
+                font-family: $font_headers;
+                padding-bottom: 1rem;
+            }
+            p{
+                font-family: $font_content;
+                line-height: 1.3rem;
+            }
+        }
+    }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+    search-container{
+        min-height: 93vh;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 8rem 3rem auto;
+
+       
+}
+}
+

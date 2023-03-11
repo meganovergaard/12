@@ -1,0 +1,23 @@
+@import "../sass/variables";
+
+.footer-content{
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+    
+    h6{
+       margin: 0;
+       font-family: $font_content;
+       text-align: center;
+       font-size: 0.9rem;
+       padding: 1.4rem 0;
+       .red {
+        color: $col_red;
+      }
+    }
+    
+}

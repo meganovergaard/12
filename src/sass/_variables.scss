@@ -1,0 +1,28 @@
+// Color variables
+$col_white: #fff;
+$col_headings: #faf9f7;
+$col_verylightgrey: #c6c6c6;
+$col_bordergrey: #b8b8b8;
+$col_lightgrey: #595959;
+$col_darkgrey: #363636;
+$col_almostblack: #222338;
+$col_red: #ae000b;
+$button_red: #b30101;
+
+// Font sizes
+$font_heading: 2rem;
+
+// Font variables
+@font-face {
+    font-family: 'EurostileNormal';
+    src: url('../assets//fonts/EuroStyleNormal.ttf');
+    font-family: 'EurostileOblique';
+    src: url('../assets//fonts/EurostileOblique.ttf');
+    font-family: 'EurostileExtended';
+    src: url('../assets//fonts/EurostileExtended.ttf');
+    font-family: 'EurostileBold';
+    src: url('../assets//fonts/EurostileBold.ttf');
+}
+
+$font_headers: 'EurostileBold';
+$font_content: 'EurostileNormal';

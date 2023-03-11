@@ -1,0 +1,70 @@
+@import "../sass/variables";
+
+.newsletter-container{
+    background-color: $col_lightgrey;
+    width: 80%;
+    display: flex;
+    display:block;
+    padding: 1rem;
+    border-radius: 0.3rem;
+
+    .newsletter-heading{
+        color: $col_white;
+        font-family: $font_headers;
+        margin: 0.5rem 1rem;
+    }
+
+    .newsletter-teaser{
+        color: $col_white;
+        font-family: $font_content;
+        line-height: 1rem;
+        font-size:0.8rem;
+        margin: 0.5rem 1rem;
+    }
+
+    form{
+        input{
+            margin: 0.5rem 1rem;
+            width: 85%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 0.1rem solid $col_bordergrey;
+            border-radius:0.3rem;
+            font-family: $font_content;
+            font-size: 0.8rem;
+        }
+
+        .button-submit{
+            width: 85%;
+            border: none;
+            background-color: $button_red;
+            color: $col_white;
+            font-family: $font_content;
+            font-weight: 500;
+            font-size: 0.8rem;
+            padding: 0.6rem;
+            border-radius: 0.4rem;
+            margin: 0.5rem 1rem; 
+            cursor: pointer;
+            &:hover{
+                background-color: $col_bordergrey;
+                color: $col_darkgrey;
+            }
+        }
+    }
+    .thankyou-message{
+        color: $col_white;
+        font-family: $font_content;
+            font-size: 0.8rem;
+            text-align: center;
+    }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+    .newsletter-container{
+        background-color: $col_lightgrey;
+        width: 90%;
+        margin-top: 2rem;
+    }
+}

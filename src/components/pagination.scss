@@ -1,0 +1,27 @@
+
+@import "../sass/variables";
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+  
+    li {
+      padding: 8px 10px;
+      list-style-type: none;
+      border: 1px solid silver;
+      margin: 2px;
+      transition: background-color 0.3s;
+      font-family: $font_content;
+      cursor: pointer;
+      background-color: $col_white;
+  
+      &.pageactive {
+        background-color: $col_red;
+        color: white;
+      }
+      &:hover:not(.pageactive) {
+        background-color: silver;
+      }
+    }
+  }
+  

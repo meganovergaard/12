@@ -1,0 +1,91 @@
+@import "../../sass/variables";
+
+.admin-tours-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 6rem 7rem auto;
+  margin-bottom: 10rem;
+  padding: 1rem;
+
+  .button-opret {
+    margin: 2rem 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 10rem;
+    height: 2rem;
+
+    background-color: $col_lightgrey;
+
+    border: none;
+    font-size: 15px;
+    color: $col_white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $col_white;
+    }
+  }
+
+  .info-top {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-family: $font_headers;
+    }
+    p {
+      text-align: center;
+      font-family: $font_content;
+    }
+  }
+
+  table {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  thead {
+    background-color: $col_red;
+    color: $col_white;
+    th {
+      height: 3rem;
+      border: 1px solid $col_lightgrey;
+    }
+  }
+
+  table,
+  td,
+  tr {
+    padding: 10px;
+    border: 1px solid $col_lightgrey;
+  }
+
+  .imageCol {
+    width: 100px;
+  }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+  .admin-tours-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 6rem 5rem auto;
+    margin-bottom: 10rem;
+
+    .info-top {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+
+    table {
+      grid-column: 1/-1;
+      grid-row: 3/-1;
+    }
+  }
+}

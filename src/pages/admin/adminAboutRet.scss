@@ -1,0 +1,38 @@
+@import "../../sass/variables";
+
+.about-ret-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    padding: 1rem;
+    width: 50%;
+
+    .rettet-besked{
+        color: $col_lightgrey;
+        font-family: $font_content;
+        font-size:1rem;
+    }
+
+    input{
+        margin-bottom:1rem;
+        font-family: $font_content;
+        
+        
+    }
+
+    .submit-ret-rejsemål{
+        border: none;
+      background-color: $button_red;
+      color: $col_white;
+      font-family: $font_content;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      font-family: $font_content;
+    }
+}

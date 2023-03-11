@@ -1,0 +1,124 @@
+@import "../sass/variables";
+
+.hero-container {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .logo-small {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    img {
+      width: 60%;
+      margin: 2rem;
+    }
+  }
+  .events {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: $font_headers;
+    color: $col_red;
+    font-size: $font_heading;
+  }
+
+  .logo-big {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    justify-content: center;
+    align-self: center;
+
+    img {
+      width: 80%;
+      margin: 2rem;
+    }
+  }
+  .travels {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-family: $font_headers;
+    color: $col_red;
+    font-size: $font_heading;
+  }
+  .arrow-icon {
+    grid-column: 4/5;
+    grid-row: 3/-1;
+    font-size: 3rem;
+    display: flex;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 2rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    .logo-small {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 20%;
+      }
+    }
+    .events {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      
+    }
+
+    .logo-big {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 40%;
+        margin: 2rem;
+      }
+    }
+
+    .travels {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+    }
+
+    .arrow-icon {
+      grid-column: 1/-1;
+      grid-row: 5/-1;
+    }
+  }
+}

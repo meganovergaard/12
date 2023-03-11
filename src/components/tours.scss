@@ -1,0 +1,106 @@
+@import "../sass/variables";
+
+.tours-container {
+   
+  width: 80%;
+  display: Grid;
+  grid-template-columns: 1;
+  grid-template-rows: 0.5fr auto 0.6fr ;
+  margin: auto;
+
+  .tours-heading {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    border: 1px solid $col_lightgrey;
+    background-color: $col_lightgrey;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-family: $font_headers;
+    text-align: center;
+    color: $col_headings;
+    font-size: 1.5rem;
+    }
+
+  .tours-container__card {
+      margin-top: 3rem;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40rem;
+    justify-content: center;
+    grid-gap: 1.5rem;
+
+    
+        .cards {
+        height: 40rem;
+        background-color: $col_white;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .top-card__rate-heading{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+            h2 {
+            font-family: $font_headers;
+            
+        }
+        }
+        
+        
+        p {
+            font-family: $font_content;
+            line-height: 1.4rem;
+            margin: 1rem;
+        }
+        .button-modal{
+            border: none;
+            background-color: $button_red;
+            color: $col_white;
+            font-family: $font_headers;
+            padding: 1rem;
+            border-radius: 0.4rem;
+            margin: 1rem;     
+            position: absolute;
+            bottom: 0;  
+            cursor: pointer;
+            &:hover{
+                background-color:$col_lightgrey;
+            }
+        }
+        }
+        #pagination-component{
+            grid-column: 1/-1;
+        grid-row: 3/-1;
+            
+            }
+    }
+}
+
+//** MOBILE DEVICE **//
+@media (max-width: 43rem) {
+    .tours-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem auto 6rem ;
+        .tours-container__card {
+            margin-top: 5rem;
+            grid-column: 1/-1;
+            grid-row: 2/3;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #pagination-component{
+            grid-column: 1/-1;
+            grid-row: 3/-1 !important;
+            display:flex;
+            flex-direction: end;
+            
+            }
+    }
+}
+
